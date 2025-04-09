@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños Sergio</title>
+    <script src="sergio.js"></script>
+</head>
+<style>
+    html {
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    #splash {
+  /* (A1) FULLSCREEN */
+  position: fixed; top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+
+  /* (A2) CENTER */
+  display: flex;
+  align-items: center; justify-content: center;
+
+  /* (A3) COSMETICS */
+  font-size: 24px;
+  color: #fff; background: #000;
+    }
+
+/* (A4) TO HIDE THE SPLASH SCREEN */
+    #splash.hide {
+  opacity: 0; visibility: hidden;
+  transition: all 1s;
+    }
+    }
+    h1{
+        text-align: right;
+        margin: 0;
+    }
+    #titulo{
+        font-size: 90px;
+        font-family: fantasy;
+        background-color: aqua;
+        text-align: center;
+    }
+    p{
+
+        font-size:50px;
+        font-family: cursive;
+        background-color: aqua;
+        text-align: center;
+    }
+    #principal{
+        display: grid;
+        grid-template-columns: 3fr 1fr  1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        left: 100px;
+    }
+
+    #gif1{
+        position:absolute;
+    }
+
+    #gif2{
+        position: absolute;
+        right: 1900px;
+        top: 900px;
+        height: 300px;
+        width: 300px;
+    }
+
+    #sergio1{
+        position: relative;
+        height: 745px;
+    }
+
+</style>
+<body>
+     <!-- (PART A) SPLASH SCREEN -->
+     <div id="splash" onclick="start()"><h1>Haz click para empezar</h1>
+        <img src="" alt="" id="sergio1" >
+        </div>
+
+     <!-- (PART B) BGM -->
+     <audio id="bgm" src="Dario Gomez - Corazonada [Official Audio].mp3" loop></audio>
+ 
+     <!-- (PART C) MAIN CONTENT -->
+     <h1 id="titulo">Feliz Cumpleaños Checho Andrés</h1>
+    <div id="principal">
+        <img src="20221013_185701.jpg" id= sergio1>
+        <img src="91af6574-7a77-4c39-a80f-2458e012a639.webp">
+        <div id="gif2">
+            <img src="91af6574-7a77-4c39-a80f-2458e012a639.webp">
+        </div>
+    </div>
+    <p>Que la santisima virgen me lo acompañe y me lo proteja en este dia tan especial</p>
+    <div id="gif1">
+    </div>
+    
+    
+    
+</body>
+</html>
